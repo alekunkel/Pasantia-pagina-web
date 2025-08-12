@@ -15,8 +15,6 @@ defineOptions({
 </template>
 
 <style>
-
-</style>
 .about {
   padding: 2rem;
   text-align: center;
@@ -59,3 +57,5 @@ defineOptions({
     justify-content: center;
   }
 }
+
+</style>

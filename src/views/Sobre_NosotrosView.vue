@@ -2,7 +2,7 @@
 import { RouterLink } from 'vue-router'
 
 defineOptions({
-  name: 'SobreN'
+  name: 'SobreNosotros'
 })
 
 export default {

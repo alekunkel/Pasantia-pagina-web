@@ -1,18 +1,17 @@
 <script>
 export default {
-  name: 'Contacto'
+  name: 'ContactoView'
 };
 </script>
 
 <template>
-  <section class="contacto">
     <h1>Contacto</h1>
     <p>Seguinos en nuestras redes sociales:</p>
 
     <div class="redes-sociales">
       <!-- Instagram -->
       <a
-        href="https://www.instagram.com/tu_usuario"
+        href="https://www.instagram.com/mym_light"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Instagram"
@@ -27,7 +26,7 @@ export default {
 
       <!-- WhatsApp -->
       <a
-        href="https://wa.me/5491234567890"
+        href="https://wa.me/5493564419955"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="WhatsApp"
@@ -42,7 +41,7 @@ export default {
 
       <!-- Facebook -->
       <a
-        href="https://www.facebook.com/tu_pagina"
+        href="https://www.facebook.com/M&M_Light"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Facebook"
@@ -57,4 +56,78 @@ export default {
 
       <!-- YouTube -->
       <a
-        href="https://www.youtube.com/
+        href="https://www.youtube.com/@mym_light/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="YouTube"
+      >
+        <svg viewBox="0 0 24 24" class="icono">
+          <path
+            d="M23.498 6.186a2.999 2.999 0 0 0-2.1-2.1C19.5 4 12 4 12 4s-7.5 0-9.398.086A2.999 2.999 0 0 0 .502 6.186 29.978 29.978 0 0 0 0 12c0 1.086.086 2.086.248 3.086a2.999 2.999 0 0 0 2.1 2.1C4.5 20 12 20 12 20s7.5 0 9.398-.086a2.999 2.999 0 0 0 2.1-2.1C23.914 14.086 24 13.086 24 12c0-1.086-.086-2.086-.248-3.086zM9.545 15.636V8.364l6.182 3.636-6.182 3.636z"
+            fill="#FF0000"
+          />
+        </svg>
+      </a>
+    </div>
+</template>
+<style scoped>
+.contacto {
+  text-align: center;
+  padding: 2rem;
+  background: #f9f9f9;
+}
+
+.contacto h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+  color: #333;
+}
+
+.contacto p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 50%;
+  background: #ddd;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.social-link:hover {
+  background: #fff;
+  transform: translateY(-5px);
+}
+
+.social-link .icono {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+/* Colores específicos por red social */
+.social-link.instagram:hover {
+  background-color: #E1306C;
+}
+
+.social-link.whatsapp:hover {
+  background-color: #25D366;
+}
+
+.social-link.facebook:hover {
+  background-color: #1877F2;
+}
+
+/* (Agrega otras redes si tenés) */
+</style>
