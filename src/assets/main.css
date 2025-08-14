@@ -1,1 +1,141 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+/* Tipografía base */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fafafa;
+  min-height: 100vh;
+}
+
+/* Enlaces */
+a {
+  color: #007acc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: #005f99;
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Contenedores */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Encabezados */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+/* Párrafos */
+p {
+  margin-bottom: 1rem;
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a.router-link-exact-active {
+  font-weight: bold;
+  color: #004080;
+}
+
+/* Botones */
+button {
+  cursor: pointer;
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+button:focus {
+  background-color: #005f99;
+  outline: none;
+}
+
+/* Formularios */
+input, select, textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #007acc;
+  outline: none;
+}
+
+/* Header específico */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #e0f0ff;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  margin: 0 auto 1.5rem;
+  display: block;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #eee;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+/* Layout responsive básico */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+
+  header {
+    padding: 3rem 1rem;
+  }
+}
