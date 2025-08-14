@@ -1,10 +1,4 @@
 <script>
-import { RouterLink } from 'vue-router'
-
-defineOptions({
-  name: 'SobreNosotros'
-})
-
 export default {
       name: 'SobreNosotros',
         data() {
