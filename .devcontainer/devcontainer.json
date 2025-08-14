@@ -1,0 +1,31 @@
+// For format details, see https://aka.ms/devcontainer.json
+// For config options, see the README at:
+// https://github.com/devcontainers/templates/tree/main/src/javascript-node
+{
+	"name": "Vue 3 + Live Share",
+	// Imagen base de Node.js (incluye npm y yarn)
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+
+	// Configuración de extensiones y personalización de VS Code
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"dbaeumer.vscode-eslint",              // Linter para JS/TS
+				"esbenp.prettier-vscode",              // Formateo automático
+				"vue.volar",                           // Soporte oficial Vue 3
+				"vue.vscode-typescript-vue-plugin",    // TypeScript para Vue
+				"ms-vsliveshare.vsliveshare",          // Live Share para colaboración
+				"ms-vsliveshare.vsliveshare-audio"     // Audio en Live Share (opcional)
+			]
+		}
+	},
+
+	// Puertos expuestos (5173 es el de Vite por defecto)
+	"forwardPorts": [5173],
+
+	// Comando que se ejecuta después de crear el contenedor
+	"postCreateCommand": "npm install",
+
+	// Si necesitas permisos root, descomenta la siguiente línea:
+	// "remoteUser": "root"
+}
