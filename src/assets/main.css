@@ -13,6 +13,7 @@ body {
   color: #333;
   background-color: #fafafa;
   min-height: 100vh;
+
 }
 
 /* Enlaces */
@@ -127,9 +128,6 @@ footer {
 
 /* Layout responsive básico */
 @media (min-width: 768px) {
-  body {
-    font-size: 18px;
-  }
 
   nav ul {
     justify-content: center;

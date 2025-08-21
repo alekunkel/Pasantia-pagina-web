@@ -1,27 +1,60 @@
 <script setup>
 import { ref } from 'vue'
+import tuboimagen from '@/imagenes/tubosled.jpg'
+import pistaled from '@/imagenes/pistaled.jpg'
 
 const productos = ref([
   {
     id: 1,
-    nombre: 'Luz LED RGB',
-    descripcion: 'Luz LED con control remoto y múltiples colores.',
-    precio: 25.99,
-    imagen: 'https://via.placeholder.com/300x200?text=Luz+LED+RGB'
+    nombre: 'Tubos LED',
+    descripcion: 'Indoor  	RGB – Full color  ',
+    diametro: "Diametro: 60cm",
+    largo: "Largo: 1000mm",
+    peso: "Peso: 0.7kg",
+    cantidad_de_pixeles: "Cantidad de pixeles: 19 pixeles RGB WS2811",
+    configuración_de_led: "Configuración del led: B – R - G",
+    consumo_de_energia: "Consumo de energía: Máximo 32w - Promedio 16w",
+    tension_de_trabajo: "Tension de trabajo: 12 Volts",
+    grado_protección: "Grado de protección a la interperie: Admite salpicaduras",
+    materiales: "Materiales de la superficie: Tubo de Polietileno blanco traslúcido - Tapas de plástico blanco",
+    software: "Software: Led Edit 2014-Jinx-Madrix-Resolume",
+    imagen: tuboimagen
+
   },
   {
     id: 2,
-    nombre: 'Bola de Espejos',
-    descripcion: 'Clásica bola de espejos giratoria para fiestas retro.',
-    precio: 39.99,
+    nombre: 'Barras Hexaled',
+    descripcion: 'Indoor  	RGB – Full color  ',
+    diametro: "Diametro: 90cm",
+    largo: "Largo: 1500mm",
+    altura: "Altura: 80mm",
+    peso: "Peso: 3.5 kg",
+    cantidad_de_pixeles: "Cantidad de pixeles: 72 pixeles RGB WS2811",
+    led_central: "Led central: Tira de led cálido de alto brillo",
+    configuración_de_led: "Configuración del led: B – R - G",
+    consumo_de_energia: "Consumo de energía: Máximo 60w - Promedio 30w",
+    tension_de_trabajo: "Tension de trabajo: 12 Volts",
+    grado_protección: "Grado de protección a la interperie: NO ES SUMERGIBLE. Uso interno",
+    materiales: "Materiales de la superficie: Estructura de aluminio. Hexágonos confeccionados en impresión 3D de alta resistencia.",
+    software: "Software: Led Edit 2014-Jinx-Madrix-Resolume",
     imagen: 'https://via.placeholder.com/300x200?text=Bola+de+Espejos'
   },
   {
     id: 3,
-    nombre: 'Laser Party Pro',
-    descripcion: 'Proyector láser con patrones dinámicos para eventos.',
-    precio: 89.00,
-    imagen: 'https://via.placeholder.com/300x200?text=Laser+Party+Pro'
+nombre: 'Pista Led',
+    descripcion: 'Indoor  	RGB – Full color  ',
+    altura: "Altura: 900mm",
+    ancho: "Ancho: 900 mm",
+    espesor: "Espesor: 55 mm",
+    peso: "Peso: 12 kg",
+    cantidad_de_pixeles: "Cantidad de pixeles: 100 unidades",
+    configuración_de_led: "Configuración del led: Rgb 3 en 1  R -G - B",
+    consumo_de_energia: "Consumo de energía: Máximo 30w - Promedio 15w",
+    tension_de_trabajo: "Tension de trabajo: 5 Volts",
+    grado_protección: "Grado de protección a la interperie: Admite salpicaduras.",
+    materiales: "Materiales de la superficie: Melamina Masisa color negro 18mm Círculos de Alto Impacto Traslúcido Recubierto con pintura PROTECT",
+    software: "Software: Led Edit 2014-Jinx-Madrix-Resolume",
+imagen: pistaled
   },
   {
     id: 4,
@@ -43,7 +76,7 @@ const productos = ref([
         <div class="producto-info">
           <h3 class="producto-nombre">{{ producto.nombre }}</h3>
           <p class="producto-descripcion">{{ producto.descripcion }}</p>
-          <p class="producto-precio">$ {{ producto.precio.toFixed(2) }}</p>
+          <p v-if="producto.precio !== undefined" class="producto-precio">$ {{ producto.precio.toFixed(2) }}</p>
         </div>
       </div>
     </div>

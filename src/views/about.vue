@@ -9,7 +9,7 @@ defineOptions({
 <template>
   <div class="about">
     <RouterLink to="/">Inicio</RouterLink>
-    <h1>Acerca de</h1>
+    <h1>¿Quiénes Somos?</h1>
     <p>Somos una empresa dedicada a la iluminación profesional</p>
   </div>
 </template>

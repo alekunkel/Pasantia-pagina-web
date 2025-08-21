@@ -14,5 +14,11 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
+      server: {
+    host: '0.0.0.0', // Escucha en todas las interfaces de red
+    hmr: {
+      clientPort: 443, // Usa el puerto HTTPS estándar
+    },
+  },
   },
 })
