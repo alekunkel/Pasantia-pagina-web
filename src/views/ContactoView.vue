@@ -71,10 +71,25 @@ export default {
 </template>
 
 <style scoped>
+
+
 .contacto {
   text-align: center;
   padding: 2rem;
-  background: #f9f9f9;
+   background: linear-gradient(270deg, red, orange, yellow, green, cyan, blue, violet, red);
+  background-size: 500% 500%;
+  animation: rainbowShift 5s linear infinite;
+  object-fit: cover; /* Hace que cubra toda la pantalla */
+}
+
+@keyframes rainbowShift {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+
 }
 
 .contacto h1 {

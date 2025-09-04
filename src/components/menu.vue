@@ -12,6 +12,7 @@ const isOpen = ref(true)
     <div class="flex justify-between items-center">
       <ul :class="[isOpen ? 'block' : 'hidden', 'md:flex', 'space-x-4']">
         <li><RouterLink to="/">Inicio</RouterLink></li>
+        <li><RouterLink to="/proyectos">Proyectos</RouterLink></li>
         <li><RouterLink to="/productos">Productos</RouterLink></li>
         <li><RouterLink to="/contacto">Contacto</RouterLink></li>
         <li><RouterLink to="/about">Acerca de</RouterLink></li>
