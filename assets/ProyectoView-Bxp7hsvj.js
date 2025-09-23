@@ -1,0 +1,1 @@
+import{_ as e,c,o}from"./index-DXi0ZDdi.js";const r={};function t(a,s){return o(),c("h1",null,"yo hacer proyectos si")}const _=e(r,[["render",t],["__scopeId","data-v-a8d96f43"]]);export{_ as default};
