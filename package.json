@@ -10,6 +10,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "deploy": "npm run build && git add dist -f && git commit -m 'Despliegue a GitHub Pages' && git subtree push --prefix dist origin gh-pages",
     "lint": "eslint . --fix"
   },
   "dependencies": {
