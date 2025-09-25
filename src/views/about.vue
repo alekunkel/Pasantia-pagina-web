@@ -5,18 +5,28 @@ defineOptions({
 </script>
 
 <template>
-  <!-- Video de fondo -->
   <div class="video-background">
+  <span class="visually-hidden">Un video de fondo animado que muestra formas abstractas moviéndose.</span>
     <video autoplay muted loop>
       <source src="/Mym_light_video.mp4" type="video/mp4" />
-
     </video>
   </div>
-  <!-- Contenido sobre el video -->
   <div class="about contenido">
   </div>
 </template>
 <style scoped>
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* Contenedor del contenido */
 .about {
   padding: 2rem;

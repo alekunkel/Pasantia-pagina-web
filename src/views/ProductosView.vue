@@ -187,26 +187,28 @@ html, body {
 
 .catalogo-container {
   width: 100%;
-  min-height: 100vh; /* que ocupe toda la altura */
-  margin: 0; /* quitar auto-centro */
-  max-width: none; /* quitar límite de 1200px */
+  min-height: 100vh;
+  margin: 0;
+  max-width: none;
   padding: 2rem 1rem;
 
-  font-family: 'Montserrat', sans-serif; /* Nueva fuente */
+  font-family: 'Montserrat', sans-serif;
 
   /* Fondo arcoiris animado */
   background: linear-gradient(270deg, red, orange, yellow, green, cyan, blue, violet, red);
   background-size: 200% 200%;
   animation: rainbowShift 20s linear infinite;
-  filter: brightness();
+
+  /* brillo global */
+  filter: brightness(1.3) saturate(1.2);
 }
 
 @keyframes rainbowShift {
   from {
-    filter: hue-rotate(0deg) brightness(0.5); /* más oscuro */
+    filter: hue-rotate(0deg) brightness(1.3) saturate(1.2);
   }
   to {
-    filter: hue-rotate(360deg) brightness(0.5);
+    filter: hue-rotate(360deg) brightness(1.3) saturate(1.2);
   }
 }
 
@@ -239,12 +241,18 @@ html, body {
   transform: translateY(-6px) scale(1.03);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
   background: rgba(255, 255, 255, 0.12); /* más oscuro al hover también */
+
+  filter: brightness(0.8);
 }
 
 .producto-img {
   width: 100%;
-  height: 220px; /* un poco más grande */
+  height: 220px;
   object-fit: cover;
+
+  /* que las imágenes también tengan más brillo */
+  filter: brightness(0.9) contrast(0.7);
+  transition: filter 0.3s ease;
 }
 
 .producto-info {
