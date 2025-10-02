@@ -178,12 +178,13 @@ const productos = ref([
   </section>
 </template>
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
 }
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
 .catalogo-container {
   width: 100%;
@@ -194,12 +195,10 @@ html, body {
 
   font-family: 'Montserrat', sans-serif;
 
-  /* Fondo arcoiris animado */
   background: linear-gradient(270deg, red, orange, yellow, green, cyan, blue, violet, red);
   background-size: 200% 200%;
   animation: rainbowShift 20s linear infinite;
 
-  /* brillo global */
   filter: brightness(1.3) saturate(1.2);
 }
 
@@ -249,8 +248,6 @@ html, body {
   width: 100%;
   height: 220px;
   object-fit: cover;
-
-  /* que las imágenes también tengan más brillo */
 }
 
 .producto-info {
