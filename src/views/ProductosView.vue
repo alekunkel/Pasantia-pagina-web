@@ -205,10 +205,10 @@ html, body {
 
 @keyframes rainbowShift {
   from {
-    filter: hue-rotate(0deg) brightness(1.3) saturate(1.2);
+    filter: hue-rotate(0deg) brightness(1.0) saturate(1.1);
   }
   to {
-    filter: hue-rotate(360deg) brightness(1.3) saturate(1.2);
+    filter: hue-rotate(360deg) brightness(1.0) saturate(1.1);
   }
 }
 
@@ -251,8 +251,6 @@ html, body {
   object-fit: cover;
 
   /* que las imágenes también tengan más brillo */
-  filter: brightness(0.9) contrast(0.7);
-  transition: filter 0.3s ease;
 }
 
 .producto-info {
@@ -278,7 +276,7 @@ html, body {
 .producto-info p {
   font-size: 1rem;
   line-height: 1.5;
-  color: #e0e0e0;
+  color: white;
   font-weight: 600;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* nuevo */
 }

@@ -14,8 +14,6 @@ const router = useRouter()
       </div>
     </div>
 
-    <nav aria-label="Enlaces rápidos" class="quick-links">
-    </nav>
   </header>
 </template>
 <style scoped>

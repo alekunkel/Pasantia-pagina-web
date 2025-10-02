@@ -17,7 +17,7 @@ export default {
       </div>
 <nav>
   <RouterLink to="/about">Acerca de</RouterLink>
-  <RouterLink to="/">inicio</RouterLink>
+  <RouterLink to="/">Inicio</RouterLink>
 
   <a href="https://wa.me/3564419955" target="_blank" aria-label="WhatsApp">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle;">
@@ -35,20 +35,55 @@ export default {
   color: white;
   padding: 20px 0;
 }
+
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 16px;
+
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center; /* Centra los items horizontalmente */
+  text-align: center;
 }
+
+.footer-content nav {
+  margin-top: 15px; /* Espacio entre el texto de copyright y los enlaces */
+}
+
 .footer-content nav a {
   color: #bbb;
-  margin-left: 15px;
   text-decoration: none;
+  margin: 0 8px;
+  display: inline-block; /* Asegura que el margen funcione bien */
 }
+
 .footer-content nav a:hover {
-  color: white;
+  color: #fff;
+}
+
+.footer-content nav a svg {
+  margin-left: 0;
+}
+@media (min-width: 768px) {
+  .footer-content {
+    /* Sobrescribe la dirección para poner los elementos en línea horizontal */
+    flex-direction: row;
+
+    /* Justifica el espacio entre el copyright y la navegación */
+    justify-content: space-between;
+    align-items: center; /* Asegura que todo esté centrado verticalmente */
+    text-align: left;
+  }
+
+  .footer-content nav {
+    margin-top: 0; /* Elimina el margen superior ya que están en fila */
+  }
+
+  .footer-content nav a {
+    /* Restaura el espaciado para la vista horizontal de PC */
+    margin-left: 15px;
+    margin-right: 0;
+  }
 }
 </style>

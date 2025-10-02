@@ -7,7 +7,7 @@ defineOptions({
 <template>
   <div class="video-background">
   <span class="visually-hidden">Un video de fondo animado que muestra formas abstractas moviéndose.</span>
-    <video autoplay muted loop>
+    <video autoplay muted loop playsinline>
       <source src="/Mym_light_video.mp4" type="video/mp4" />
     </video>
   </div>
@@ -35,11 +35,9 @@ defineOptions({
   color: #fff;
   position: relative;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.4); /* capa semitransparente para dar contraste */
   border-radius: 12px;
   max-width: 800px;
   margin: 2rem auto;
-  backdrop-filter: blur(4px); /* efecto de desenfoque detrás */
 }
 
 /* Links */

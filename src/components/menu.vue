@@ -23,9 +23,9 @@ const isOpen = ref(true)
 <style>
 /* Menú principal */
 nav {
-  background-color: #f0f4f8;
+  background-color: #222;
   padding: 1rem 2rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px whitesmoke;
 }
 
 nav ul {
@@ -43,7 +43,7 @@ nav li {
 }
 
 nav a {
-  color: #007acc;
+  color: white;
   text-decoration: none;
   padding: 0.3rem 0.5rem;
   border-radius: 4px;
@@ -53,9 +53,9 @@ nav a {
 nav a:hover,
 nav a:focus,
 nav a.router-link-exact-active {
-  background-color: #007acc;
+  background-color: gray;
   color: white;
   outline: none;
-  box-shadow: 0 0 5px #007acc88;
+  box-shadow: 0 0 5px #222;
 }
 </style>

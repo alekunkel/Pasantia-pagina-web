@@ -20,7 +20,7 @@ body {
 
 /* Enlaces globales */
 a {
-  color: #00c3ff;
+  color: gray;
   text-decoration: none;
   transition: color 0.3s ease;
 }
