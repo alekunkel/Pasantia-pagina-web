@@ -1,4 +1,6 @@
 <script setup>
+import myVideo from '@/assets/videos/Mym_light_video.mp4'
+
 defineOptions({
   name: 'AboutView'
 })
@@ -6,14 +8,18 @@ defineOptions({
 
 <template>
   <div class="video-background">
-  <span class="visually-hidden">Un video de fondo animado que muestra formas abstractas moviéndose.</span>
+    <span class="visually-hidden">
+      Un video de fondo animado que muestra formas abstractas moviéndose.
+    </span>
     <video autoplay muted loop playsinline>
-      <source src="/Mym_light_video.mp4" type="video/mp4" />
+      <source :src="myVideo" type="video/mp4" />
     </video>
   </div>
   <div class="about contenido">
+    <!-- tu contenido -->
   </div>
 </template>
+
 <style scoped>
 .visually-hidden {
   position: absolute;
@@ -27,6 +33,7 @@ defineOptions({
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 /* Contenedor del contenido */
 .about {
   padding: 2rem;
@@ -40,7 +47,6 @@ defineOptions({
   margin: 2rem auto;
 }
 
-/* Links */
 .about a {
   display: inline-block;
   margin-bottom: 1.5rem;
@@ -55,14 +61,12 @@ defineOptions({
   text-decoration: underline;
 }
 
-/* Títulos */
 .about h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
 }
 
-/* Párrafos */
 .about p {
   font-size: 1.2rem;
   max-width: 600px;
@@ -71,7 +75,6 @@ defineOptions({
   text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
 }
 
-/* Responsivo */
 @media (min-width: 1024px) {
   .about {
     min-height: 100vh;

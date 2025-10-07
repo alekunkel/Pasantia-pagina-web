@@ -1,13 +1,13 @@
 <script setup>
 import { ref } from 'vue'
-import tuboimagen from '@/imagenes/tubosled.jpg'
-import pistaled from '@/imagenes/pistaled.jpg'
-import barra_exaled from '@/imagenes/barraexaled.jpg'
-import arospixel_led from '@/imagenes/arospixel_led.jpg'
-import cuadradospixel_led from '@/imagenes/cuadradospixel_led.jpg'
-import exaled from '@/imagenes/exaled.jpg'
-import triangulosled from '@/imagenes/triangulospixel_led.jpg'
-import pistadeacero from '@/imagenes/pistadeacero.jpg'
+import tuboimagen from '@/assets/imagenes/tubosled.jpg'
+import pistaled from '@/assets/imagenes/pistaled.jpg'
+import barra_exaled from '@/assets/imagenes/barraexaled.jpg'
+import arospixel_led from '@/assets/imagenes/arospixel_led.jpg'
+import cuadradospixel_led from '@/assets/imagenes/cuadradospixel_led.jpg'
+import exaled from '@/assets/imagenes/exaled.jpg'
+import triangulosled from '@/assets/imagenes/triangulospixel_led.jpg'
+import pistadeacero from '@/assets/imagenes/pistadeacero.jpg'
 
 const productos = ref([
   {
@@ -121,7 +121,8 @@ const productos = ref([
     peso: "Peso: 9 kg",
     grado_proteccion: "Grado de protección: Admite salpicaduras. No es sumergible",
     materiales: "Materiales: Melamina Masisa color negro 18mm + chapa de acero brillante 0,7mm recubierta con pintura PROTECT",
-    imagen:pistadeacero
+    software: "Software: Led Edit 2014 - Jinx - Madrix - Resolume",
+    imagen: pistadeacero
   },
   {
     id: 8,

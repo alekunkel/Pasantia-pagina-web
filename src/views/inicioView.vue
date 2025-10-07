@@ -5,7 +5,7 @@ const router = useRouter()
 <template>
   <header class="site-header">
     <div class="header-content">
-<img class="logo" src="@/imagenes/logo.jpg" alt="Logo de M y M Light" width="125" height="125" />
+<img class="logo" src="@/assets/imagenes/logo.jpg" alt="Logo de M y M Light" width="125" height="125" />
       <div class="header-text">
         <h1>Empresa líder en iluminación </h1>
         <p class="tagline">Soluciones en iluminación profesional para proyectos residenciales, comerciales e industriales.</p>
