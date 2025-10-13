@@ -1,28 +1,45 @@
 <script setup>
 import { useRouter } from 'vue-router'
+import logoUrl from '@/assets/imagenes/logo.png' // Importa el logo dinámicamente
 const router = useRouter()
 </script>
+
 <template>
   <header class="site-header">
     <div class="header-content">
-<img class="logo" src="@/assets/imagenes/logo.jpg" alt="Logo de M y M Light" width="125" height="125" />
+      <!-- Logo con máscara usando estilo dinámico -->
+      <div
+        class="logo"
+        role="img"
+        aria-label="Logo MyM Light"
+        :style="{
+          maskImage: `url(${logoUrl})`,
+          WebkitMaskImage: `url(${logoUrl})`
+        }"
+      ></div>
+
       <div class="header-text">
-        <h1>Empresa líder en iluminación </h1>
-        <p class="tagline">Soluciones en iluminación profesional para proyectos residenciales, comerciales e industriales.</p>
-        <p class="description">Especialistas en tecnología LED, proyectores arquitectónicos, control inteligente y diseño lumínico. Nuestro equipo ofrece asesoramiento técnico, instalación y mantenimiento.</p>
+        <h1>Empresa líder en iluminación</h1>
+        <p class="tagline">
+          Soluciones en iluminación profesional para proyectos residenciales, comerciales e industriales.
+        </p>
+        <p class="description">
+          Especialistas en tecnología LED, proyectores arquitectónicos, control inteligente y diseño lumínico.
+          Nuestro equipo ofrece asesoramiento técnico, instalación y mantenimiento.
+        </p>
         <button @click="router.push('/contacto')" class="cta-button">Contáctanos</button>
       </div>
     </div>
-
   </header>
 </template>
+
 <style scoped>
 .site-header {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh; /* ocupa toda la pantalla */
-  background: linear-gradient(135deg, #0a0a23, #111133); /* fondo oscuro degradado */
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a23, #111133);
   color: #fff;
   text-align: center;
   padding: 2rem;
@@ -36,9 +53,15 @@ const router = useRouter()
 }
 
 .logo {
-  width: 150px;
-  height: auto;
-  margin-bottom: 1.5rem;
+  width: 180px;
+  height: 180px;
+  background: linear-gradient(135deg, #0a0a23, #111133);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
 }
 
 .header-text h1 {
@@ -83,7 +106,7 @@ const router = useRouter()
   box-shadow: 0 6px 20px rgba(0, 195, 255, 0.6);
 }
 
-/* Adaptación responsive */
+/* Responsive design */
 @media (min-width: 768px) {
   .header-content {
     flex-direction: row;
@@ -96,7 +119,6 @@ const router = useRouter()
   }
 
   .logo {
-    width: 180px;
     margin-bottom: 0;
   }
 }
