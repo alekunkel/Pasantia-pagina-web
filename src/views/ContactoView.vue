@@ -1,8 +1,4 @@
-vv
-<script>
-export default {
-  name: "ContactoView",
-};
+<script setup>
 </script>
 
 <template>
@@ -20,7 +16,7 @@ export default {
       >
         <svg viewBox="0 0 24 24" class="icono">
           <path
-            d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.3 2.2.5.5.2.9.5 1.3.9.4.4.7.8.9 1.3.2.4.4 1 .5 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.3 1.8-.5 2.2-.2.5-.5.9-.9 1.3-.4.4-.8.7-1.3.9-.4.2-1 .4-2.2.5-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.3-2.2-.5-.5-.2-.9-.5-1.3-.9-.4-.4-.7-.8-.9-1.3-.2-.4-.4-1-.5-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.3-1.8.5-2.2.2-.5.5-.9.9-1.3.4-.4.8-.7 1.3-.9.4-.2 1-.4 2.2-.5C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.4 0-4.6.1-1.1.1-1.6.2-2 .4-.5.2-.8.4-1.2.8-.3.3-.6.7-.8 1.2-.2.4-.3.9-.4 2-.1 1.2-.1 1.5-.1 4.6s0 3.4.1 4.6c.1 1.1.2 1.6.4 2 .2.5.4.8.8 1.2.3.3.7.6 1.2.8.4.2.9.3 2 .4 1.2.1 1.5.1 4.6.1s3.4 0 4.6-.1c1.1-.1 1.6-.2 2-.4.5-.2.8-.4 1.2-.8.3-.3.6-.7.8-1.2.2-.4.3-.9.4-2 .1-1.2.1-1.5.1-4.6s0-3.4-.1-4.6c-.1-1.1-.2-1.6-.4-2-.2-.5-.4-.8-.8-1.2-.3-.3-.7-.6-1.2-.8-.4-.2-.9-.3-2-.4-1.2-.1-1.5-.1-4.6-.1zM12 5.8a6.2 6.2 0 1 1 0 12.4 6.2 6.2 0 0 1 0-12.4zm0 10.2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5.3-10.7a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8z"
+            d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.3 2.2.5.5.2.9.5 1.3.9.4.4.7.8.9 1.3.2.4.4 1 .5 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.3 1.8-.5 2.2-.2.5-.5.9-.9 1.3-.4-.4-.8.7-1.3.9-.4.2-1 .4-2.2.5-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.3-2.2-.5-.5-.2-.9-.5-1.3-.9-.4-.4-.7-.8-.9-1.3-.2-.4-.4-1-.5-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.3-1.8.5-2.2.2-.5.5.9.9-1.3.4-.4.8-.7 1.3-.9.4-.2 1-.4 2.2-.5C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.4 0-4.6.1-1.1.1-1.6.2-2 .4-.5.2-.8.4-1.2.8-.3.3-.6.7-.8 1.2-.2.4-.3.9-.4 2-.1 1.2-.1 1.5-.1 4.6s0 3.4.1 4.6c.1 1.1.2 1.6.4 2 .2.5.4.8.8 1.2.3.3.7.6 1.2.8.4.2.9.3 2 .4 1.2.1 1.5.1 4.6.1s3.4 0 4.6-.1c1.1-.1 1.6-.2 2-.4.5-.2.8-.4 1.2.8.3-.3.6-.7.8-1.2.2-.4.3-.9-.4-2 .1-1.2.1-1.5.1-4.6s0-3.4-.1-4.6c-.1-1.1-.2-1.6-.4-2-.2-.5-.4-.8-.8-1.2-.3-.3-.7-.6-1.2-.8-.4-.2-.9-.3-2-.4-1.2-.1-1.5-.1-4.6-.1zM12 5.8a6.2 6.2 0 1 1 0 12.4 6.2 6.2 0 0 1 0-12.4zm0 10.2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5.3-10.7a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8z"
           />
         </svg>
       </a>
@@ -38,7 +34,6 @@ export default {
           />
         </svg>
       </a>
-
       <a
         href="https://www.facebook.com/M&M_Light"
         target="_blank"
@@ -52,7 +47,6 @@ export default {
           />
         </svg>
       </a>
-
       <a
         href="https://www.youtube.com/@mym_light/"
         target="_blank"
@@ -71,15 +65,28 @@ export default {
 </template>
 
 <style scoped>
-
-
 .contacto {
   text-align: center;
   padding: 2rem;
-   background: linear-gradient(270deg, red, orange, yellow, green, cyan, blue, violet, red);
+  background: linear-gradient(
+    270deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet,
+    red
+  );
   background-size: 500% 500%;
   animation: rainbowShift 5s linear infinite;
   object-fit: cover; /* Hace que cubra toda la pantalla */
+  min-height: 100vh; /* Asegura que ocupe al menos toda la altura de la pantalla */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes rainbowShift {
@@ -89,19 +96,20 @@ export default {
   to {
     filter: hue-rotate(360deg);
   }
-
 }
 
 .contacto h1 {
   margin-bottom: 0.5rem;
-  font-size: 2.2rem;
-  color: #333;
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .contacto p {
   margin-bottom: 1.5rem;
-  font-size: 1.1rem;
-  color: #555;
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .redes-sociales {
@@ -118,35 +126,32 @@ export default {
   width: 3.6rem;
   height: 3.6rem;
   border-radius: 50%;
-  background: #ddd;
-  transition: background 0.3s, transform 0.3s;
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
+  backdrop-filter: blur(5px);
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .social-link .icono {
   width: 1.8rem;
   height: 1.8rem;
   fill: white;
-  transition: fill 0.3s;
 }
 
 .social-link:hover {
   transform: translateY(-5px);
 }
 
+/* Colores de hover específicos para cada red social */
 .instagram:hover {
   background-color: #e1306c;
 }
-
 .whatsapp:hover {
   background-color: #25d366;
 }
-
 .facebook:hover {
   background-color: #1877f2;
 }
-
 .youtube:hover {
   background-color: #ff0000;
 }
 </style>
-
