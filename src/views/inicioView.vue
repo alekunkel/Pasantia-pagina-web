@@ -1,22 +1,13 @@
 <script setup>
 import { useRouter } from 'vue-router'
-import logoUrl from '@/assets/imagenes/logo.png' // Importa el logo dinámicamente
+import logomym from '@/assets/imagenes/Logo M y M.png'
 const router = useRouter()
 </script>
 
 <template>
   <header class="site-header">
     <div class="header-content">
-      <!-- Logo con máscara usando estilo dinámico -->
-      <div
-        class="logo"
-        role="img"
-        aria-label="Logo MyM Light"
-        :style="{
-          maskImage: `url(${logoUrl})`,
-          WebkitMaskImage: `url(${logoUrl})`
-        }"
-      ></div>
+      <img :src="logomym" alt="Logo MyM Light" class="logo" />
 
       <div class="header-text">
         <h1>Empresa líder en iluminación</h1>
@@ -47,25 +38,24 @@ const router = useRouter()
 
 .header-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Apilado en móvil (Mobile First) */
   align-items: center;
   max-width: 800px;
 }
 
+/* PASO 1: Estilos base del logo para MÓVILES */
 .logo {
-  width: 180px;
-  height: 180px;
-  background: linear-gradient(135deg, #0a0a23, #111133);
-  mask-size: contain;
-  mask-repeat: no-repeat;
-  mask-position: center;
-  -webkit-mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
+  width: 200px; /* Tamaño más adecuado para móvil */
+  height: 200px;
+  opacity: 0.7;
+  margin-bottom: 2rem; /* Espacio entre el logo y el texto en móvil */
+  /* PASO 3: Degradado de la máscara corregido */
+  mask-image: radial-gradient(circle, black 70%, transparent 90%);
+  -webkit-mask-image: radial-gradient(circle, black 70%, transparent 90%);
 }
 
 .header-text h1 {
-  font-size: 2.8rem;
+  font-size: 2.5rem; /* Un poco más pequeño para móviles */
   font-weight: 700;
   margin-bottom: 1rem;
   text-transform: uppercase;
@@ -73,7 +63,7 @@ const router = useRouter()
 }
 
 .tagline {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 1.5rem;
   color: #f1f1f1;
@@ -88,8 +78,8 @@ const router = useRouter()
 }
 
 .cta-button {
-  background: #00c3ff;
-  color: #fff;
+  background: #fdd835;
+  color: #1a1a1a;
   border: none;
   border-radius: 50px;
   padding: 0.8rem 2rem;
@@ -97,29 +87,36 @@ const router = useRouter()
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 195, 255, 0.4);
+  box-shadow: 0 4px 15px rgba(253, 216, 53, 0.4);
 }
 
 .cta-button:hover {
-  background: #00a0cc;
+  background: #fbc02d;
   transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0, 195, 255, 0.6);
+  box-shadow: 0 6px 20px rgba(253, 216, 53, 0.6);
 }
 
-/* Responsive design */
+/* PASO 2: Ajustes para pantallas de 768px o MÁS (Tablets y PC) */
 @media (min-width: 768px) {
   .header-content {
-    flex-direction: row;
+    flex-direction: row; /* Layout lado a lado */
     text-align: left;
-    gap: 2rem;
+    gap: 3rem; /* Aumentamos un poco el espacio */
   }
 
   .header-text {
     max-width: 500px;
   }
 
+  .header-text h1 {
+    font-size: 2.8rem; /* Restauramos el tamaño grande para PC */
+  }
+
+  /* Modificamos solo lo que cambia para el logo en PC */
   .logo {
-    margin-bottom: 0;
+    width: 320px; /* Tamaño más grande para PC */
+    height: 320px;
+    margin-bottom: 0; /* Quitamos el margen inferior */
   }
 }
 </style>

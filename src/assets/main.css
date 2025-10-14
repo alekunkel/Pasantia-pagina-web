@@ -1,6 +1,4 @@
-/* main.css */
-
-/* Reset básico */
+/* 1. Reset Básico (tu código original) */
 *,
 *::before,
 *::after {
@@ -9,34 +7,52 @@
   box-sizing: border-box;
 }
 
-/* Fondo global */
-html,
+html {
+  font-size: 16px; /* Tamaño de fuente base para el cálculo de 'rem' */
+}
+
 body {
   height: 100%;
   font-family: 'Montserrat', Arial, sans-serif;
-  color: #fff; /* texto blanco por defecto */
+  color: #333; /* Un color oscuro en lugar de blanco para mejor legibilidad */
   line-height: 1.6;
 }
 
-/* Enlaces globales */
 a {
-  color: gray;
+  color: #007bff; /* Un color más estándar para enlaces */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-
-/* Títulos */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   margin-bottom: 1rem;
   line-height: 1.2;
 }
 
-/* Párrafos */
+h1 { font-size: 2.25rem; }
+h2 { font-size: 1.75rem; }
 p {
   margin-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 1rem; /* Esto equivale a 16px por defecto */
 }
 
-/* Contenedor genérico */
+img, video, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+
+  h1 { font-size: 3rem; }
+  h2 { font-size: 2.25rem; }
+}
