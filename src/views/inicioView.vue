@@ -43,17 +43,15 @@ const router = useRouter()
   max-width: 800px;
 }
 
-/* PASO 1: Estilos base del logo para MÓVILES */
 .logo {
-  width: 200px; /* Tamaño más adecuado para móvil */
-  height: 200px;
-  opacity: 0.7;
-  margin-bottom: 2rem; /* Espacio entre el logo y el texto en móvil */
-  /* PASO 3: Degradado de la máscara corregido */
-  mask-image: radial-gradient(circle, black 70%, transparent 90%);
-  -webkit-mask-image: radial-gradient(circle, black 70%, transparent 90%);
+  width: 300px; /* Tamaño más adecuado para móvil */
+  height: 300px;
+  opacity: 1;
+  margin-bottom: 2rem;
+  mask-image: radial-gradient(circle, black 70%, transparent 30%);
+  -webkit-mask-image: radial-gradient(circle, black 70%, transparent 30%);
+  opacity: 0.55;
 }
-
 .header-text h1 {
   font-size: 2.5rem; /* Un poco más pequeño para móviles */
   font-weight: 700;
@@ -95,8 +93,6 @@ const router = useRouter()
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(253, 216, 53, 0.6);
 }
-
-/* PASO 2: Ajustes para pantallas de 768px o MÁS (Tablets y PC) */
 @media (min-width: 768px) {
   .header-content {
     flex-direction: row; /* Layout lado a lado */
@@ -112,7 +108,6 @@ const router = useRouter()
     font-size: 2.8rem; /* Restauramos el tamaño grande para PC */
   }
 
-  /* Modificamos solo lo que cambia para el logo en PC */
   .logo {
     width: 320px; /* Tamaño más grande para PC */
     height: 320px;
