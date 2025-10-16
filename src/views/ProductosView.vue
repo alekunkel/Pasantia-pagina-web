@@ -1,178 +1,151 @@
 <script setup>
 import { ref } from 'vue'
-import tuboimagen from '@/assets/imagenes/tubosled.jpg'
-import pistaled from '@/assets/imagenes/pistaled.jpg'
-import barra_exaled from '@/assets/imagenes/barraexaled.jpg'
-import arospixel_led from '@/assets/imagenes/arospixel_led.jpg'
-import cuadradospixel_led from '@/assets/imagenes/cuadradospixel_led.jpg'
-import exaled from '@/assets/imagenes/exaled.jpg'
-import triangulosled from '@/assets/imagenes/triangulospixel_led.jpg'
-import pistadeacero from '@/assets/imagenes/pistadeacero.jpg'
 
+// Ya no necesitamos la función 'getImageUrl' ni los 'import' de imágenes.
+// La estructura de datos ahora está limpia y es consistente para todos los productos.
 const productos = ref([
   {
     id: 1,
     nombre: 'Tubos LED',
     descripcion: 'Indoor RGB – Full color',
-    diametro: "Diámetro: 60 mm",
-    largo: "Largo: 1000 mm",
-    peso: "Peso: 0.7 kg",
-    cantidad_de_pixeles: "Cantidad de píxeles: 19 píxeles RGB WS2811",
-    configuracion_de_led: "Configuración del led: B – R – G",
-    consumo_de_energia: "Consumo de energía: Máximo 32w - Promedio 16w",
-    tension_de_trabajo: "Tensión de trabajo: 12 Volts",
-    grado_proteccion: "Grado de protección: Admite salpicaduras. No es sumergible",
-    materiales: "Materiales: Tubo de polietileno blanco traslúcido - Tapas de plástico blanco",
-    software: "Software: Led Edit 2014 - Jinx - Madrix - Resolume",
-    imagen: tuboimagen
+    imagen: 'tubosled.jpg', // Solo el nombre del archivo
+    especificaciones: [
+      { etiqueta: 'Diámetro', valor: '60 mm' },
+      { etiqueta: 'Largo', valor: '1000 mm' },
+      { etiqueta: 'Peso', valor: '0.7 kg' },
+      { etiqueta: 'Píxeles', valor: '19 RGB WS2811' },
+      { etiqueta: 'Consumo', valor: 'Máx. 32w / Prom. 16w' },
+      { etiqueta: 'Tensión', valor: '12 Volts' },
+      { etiqueta: 'Protección', valor: 'Admite salpicaduras' },
+    ]
   },
   {
     id: 2,
     nombre: 'Barras Hexaled',
     descripcion: 'Indoor RGB – Full color',
-    largo: "Largo: 1500 mm",
-    altura: "Altura: 80 mm",
-    peso: "Peso: 3.5 kg",
-    cantidad_de_pixeles: "Cantidad de píxeles: 72 píxeles RGB WS2811",
-    led_central: "Led central: Tira de led cálido de alto brillo",
-    configuracion_de_led: "Configuración del led: B – R – G",
-    consumo_de_energia: "Consumo de energía: Máximo 60w - Promedio 30w",
-    tension_de_trabajo: "Tensión de trabajo: 12 Volts",
-    grado_proteccion: "Grado de protección: No es sumergible. Uso interno",
-    materiales: "Materiales: Estructura de aluminio. Hexágonos en impresión 3D de alta resistencia",
-    software: "Software: Led Edit 2014 - Jinx - Madrix - Resolume",
-    imagen: barra_exaled
+    imagen: 'barraexaled.jpg',
+    especificaciones: [
+      { etiqueta: 'Largo', valor: '1500 mm' },
+      { etiqueta: 'Altura', valor: '80 mm' },
+      { etiqueta: 'Peso', valor: '3.5 kg' },
+      { etiqueta: 'Píxeles', valor: '72 RGB WS2811' },
+      { etiqueta: 'Led Central', valor: 'Tira de led cálido' },
+      { etiqueta: 'Consumo', valor: 'Máx. 60w / Prom. 30w' },
+      { etiqueta: 'Tensión', valor: '12 Volts' },
+    ]
   },
   {
     id: 3,
     nombre: 'Pista Led',
     descripcion: 'Indoor RGB – Full color',
-    ancho: "Ancho: 900 mm",
-    alto: "Alto: 900 mm",
-    espesor: "Espesor: 55 mm",
-    peso: "Peso: 12 kg",
-    cantidad_de_pixeles: "Cantidad de píxeles: 100 unidades",
-    configuracion_de_led: "Configuración del led: RGB 3 en 1 (R - G - B)",
-    consumo_de_energia: "Consumo de energía: Máximo 30w - Promedio 15w",
-    tension_de_trabajo: "Tensión de trabajo: 5 Volts",
-    grado_proteccion: "Grado de protección: Admite salpicaduras. No es sumergible",
-    materiales: "Materiales: Melamina Masisa color negro 18mm + círculos de alto impacto traslúcido con pintura PROTECT",
-    software: "Software: Led Edit 2014 - Jinx - Madrix - Resolume",
-    imagen: pistaled
+    imagen: 'pistaled.jpg',
+    especificaciones: [
+      { etiqueta: 'Dimensiones', valor: '900x900 mm' },
+      { etiqueta: 'Espesor', valor: '55 mm' },
+      { etiqueta: 'Peso', valor: '12 kg' },
+      { etiqueta: 'Píxeles', valor: '100 unidades' },
+      { etiqueta: 'Consumo', valor: 'Máx. 30w / Prom. 15w' },
+      { etiqueta: 'Tensión', valor: '5 Volts' },
+    ]
   },
   {
     id: 4,
     nombre: 'Aros Pixel Led',
-    descripcion: 'Foco estroboscópico con velocidad ajustable',
-    diametro: "Diámetro: 950 mm",
-    altura: "Altura: 70 mm",
-    ancho_haz: "Ancho del haz: 70 mm",
-    peso: "Peso: 3 kg",
-    cantidad_de_pixeles: "Cantidad de píxeles: 54 píxeles RGB WS2811",
-    configuracion_de_led: "Configuración del led: B – R – G",
-    consumo_de_energia: "Consumo de energía: Máximo 32w - Promedio 16w",
-    tension_de_trabajo: "Tensión de trabajo: 12 Volts",
-    grado_proteccion: "Grado de protección: Admite salpicaduras. No es sumergible",
-    materiales: "Materiales: Base de alto impacto color negro + círculo de polietileno blanco traslúcido",
-    software: "Software: Led Edit 2014 - Jinx - Madrix - Resolume",
-    imagen: arospixel_led
+    descripcion: 'Foco estroboscópico ajustable',
+    imagen: 'arospixel_led.jpg',
+    especificaciones: [
+      { etiqueta: 'Diámetro', valor: '950 mm' },
+      { etiqueta: 'Altura', valor: '70 mm' },
+      { etiqueta: 'Peso', valor: '3 kg' },
+      { etiqueta: 'Píxeles', valor: '54 RGB WS2811' },
+      { etiqueta: 'Consumo', valor: 'Máx. 32w / Prom. 16w' },
+      { etiqueta: 'Tensión', valor: '12 Volts' },
+    ]
   },
   {
     id: 5,
     nombre: 'Cuadrados Pixel Led',
     descripcion: 'Indoor RGB – Full color',
-    lado: "Lado: 725 mm",
-    altura: "Altura: 70 mm",
-    ancho_haz: "Ancho del haz: 70 mm",
-    peso: "Peso: 2.7 kg",
-    cantidad_de_pixeles: "Cantidad de píxeles: 52 píxeles RGB WS2811",
-    configuracion_de_led: "Configuración del led: B – R – G",
-    consumo_de_energia: "Consumo de energía: Máximo 30w - Promedio 15w",
-    tension_de_trabajo: "Tensión de trabajo: 12 Volts",
-    grado_proteccion: "Grado de protección: Admite salpicaduras. No es sumergible",
-    materiales: "Materiales: Base de alto impacto color negro + cuadrado de polietileno blanco traslúcido",
-    software: "Software: Led Edit 2014 - Jinx - Madrix - Resolume",
-    imagen: cuadradospixel_led
+    imagen: 'cuadradospixel_led.jpg',
+    especificaciones: [
+      { etiqueta: 'Lado', valor: '725 mm' },
+      { etiqueta: 'Altura', valor: '70 mm' },
+      { etiqueta: 'Peso', valor: '2.7 kg' },
+      { etiqueta: 'Píxeles', valor: '52 RGB WS2811' },
+      { etiqueta: 'Consumo', valor: 'Máx. 30w / Prom. 15w' },
+      { etiqueta: 'Tensión', valor: '12 Volts' },
+    ]
   },
   {
     id: 6,
     nombre: 'Triángulos Pixel Led',
     descripcion: 'Indoor RGB – Full color',
-    lado: "Lado: 810 mm",
-    altura: "Altura: 70 mm",
-    ancho_haz: "Ancho del haz: 70 mm",
-    peso: "Peso: 2.2 kg",
-    cantidad_de_pixeles: "Cantidad de píxeles: 41 píxeles RGB WS2811",
-    configuracion_de_led: "Configuración del led: B – R – G",
-    consumo_de_energia: "Consumo de energía: Máximo 24w - Promedio 12w",
-    tension_de_trabajo: "Tensión de trabajo: 12 Volts",
-    grado_proteccion: "Grado de protección: Admite salpicaduras. No es sumergible",
-    materiales: "Materiales: Base de alto impacto color negro + triángulo de polietileno blanco traslúcido",
-    software: "Software: Led Edit 2014 - Jinx - Madrix - Resolume",
-    imagen:triangulosled
+    imagen: 'triangulospixel_led.jpg',
+    especificaciones: [
+      { etiqueta: 'Lado', valor: '810 mm' },
+      { etiqueta: 'Altura', valor: '70 mm' },
+      { etiqueta: 'Peso', valor: '2.2 kg' },
+      { etiqueta: 'Píxeles', valor: '41 RGB WS2811' },
+      { etiqueta: 'Consumo', valor: 'Máx. 24w / Prom. 12w' },
+      { etiqueta: 'Tensión', valor: '12 Volts' },
+    ]
   },
   {
     id: 7,
     nombre: 'Pista de Acero',
-    descripcion: 'Indoor RGB – Full color',
-    ancho: "Ancho: 900 mm",
-    alto: "Alto: 900 mm",
-    espesor: "Espesor: 45 mm",
-    peso: "Peso: 9 kg",
-    grado_proteccion: "Grado de protección: Admite salpicaduras. No es sumergible",
-    materiales: "Materiales: Melamina Masisa color negro 18mm + chapa de acero brillante 0,7mm recubierta con pintura PROTECT",
-    software: "Software: Led Edit 2014 - Jinx - Madrix - Resolume",
-    imagen: pistadeacero
+    descripcion: 'Pista de baile sin iluminación',
+    imagen: 'pistadeacero.jpg',
+    especificaciones: [
+      { etiqueta: 'Dimensiones', valor: '900x900 mm' },
+      { etiqueta: 'Espesor', valor: '45 mm' },
+      { etiqueta: 'Peso', valor: '9 kg' },
+      { etiqueta: 'Material', valor: 'Melamina negra y chapa de acero' },
+    ]
   },
   {
     id: 8,
     nombre: 'Hexaled',
     descripcion: 'Indoor RGB – Full color',
-    diametro: "Diámetro: 900 mm",
-    altura: "Altura: 80 mm",
-    peso: "Peso: 4 kg",
-    cantidad_de_pixeles: "Cantidad de píxeles: 84 píxeles RGB WS2811",
-    led_central: "Led central: Tira de led cálido de alto brillo",
-    configuracion_de_led: "Configuración del led: B – R – G",
-    consumo_de_energia: "Consumo de energía: Máximo 70w - Promedio 35w",
-    tension_de_trabajo: "Tensión de trabajo: 12 Volts",
-    grado_proteccion: "Grado de protección: No es sumergible. Uso interno",
-    materiales: "Materiales: Estructura de aluminio. Hexágonos confeccionados en impresión 3D de alta resistencia",
-    software: "Software: Led Edit 2014 - Jinx - Madrix - Resolume",
-    imagen: exaled
-    }
+    imagen: 'exaled.jpg',
+    especificaciones: [
+      { etiqueta: 'Diámetro', valor: '900 mm' },
+      { etiqueta: 'Altura', valor: '80 mm' },
+      { etiqueta: 'Peso', valor: '4 kg' },
+      { etiqueta: 'Píxeles', valor: '84 RGB WS2811' },
+      { etiqueta: 'Led Central', valor: 'Tira de led cálido' },
+      { etiqueta: 'Consumo', valor: 'Máx. 70w / Prom. 35w' },
+      { etiqueta: 'Tensión', valor: '12 Volts' },
+    ]
+  }
 ])
 </script>
 
 <template>
   <section class="catalogo-container">
     <h2 class="titulo">Catálogo de Iluminación para Fiestas</h2>
-
     <div class="productos-grid">
       <div v-for="producto in productos" :key="producto.id" class="producto-card">
-        <img :src="producto.imagen" :alt="producto.nombre" class="producto-img" />
+        <picture>
+          <source :srcset="`/imagenes/${producto.imagen.replace('.jpg', '.webp')}`" type="image/webp">
+
+          <img
+            :src="`/imagenes/${producto.imagen}`"
+            :alt="producto.nombre"
+            class="producto-img"
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
 
         <div class="producto-info">
           <h3 class="producto-nombre">{{ producto.nombre }}</h3>
           <p class="producto-descripcion">{{ producto.descripcion }}</p>
 
-          <p v-if="producto.diametro">{{ producto.diametro }}</p>
-          <p v-if="producto.largo">{{ producto.largo }}</p>
-          <p v-if="producto.alto">{{ producto.alto }}</p>
-          <p v-if="producto.ancho">{{ producto.ancho }}</p>
-          <p v-if="producto.espesor">{{ producto.espesor }}</p>
-          <p v-if="producto.lado">{{ producto.lado }}</p>
-          <p v-if="producto.altura">{{ producto.altura }}</p>
-          <p v-if="producto.ancho_haz">{{ producto.ancho_haz }}</p>
-          <p v-if="producto.peso">{{ producto.peso }}</p>
-          <p v-if="producto.cantidad_de_pixeles">{{ producto.cantidad_de_pixeles }}</p>
-          <p v-if="producto.led_central">{{ producto.led_central }}</p>
-          <p v-if="producto.configuracion_de_led">{{ producto.configuracion_de_led }}</p>
-          <p v-if="producto.consumo_de_energia">{{ producto.consumo_de_energia }}</p>
-          <p v-if="producto.tension_de_trabajo">{{ producto.tension_de_trabajo }}</p>
-          <p v-if="producto.grado_proteccion">{{ producto.grado_proteccion }}</p>
-          <p v-if="producto.materiales">{{ producto.materiales }}</p>
-          <p v-if="producto.software">{{ producto.software }}</p>
+          <ul v-if="producto.especificaciones && producto.especificaciones.length" class="especificaciones-lista">
+            <li v-for="spec in producto.especificaciones" :key="spec.etiqueta">
+              <strong>{{ spec.etiqueta }}:</strong> {{ spec.valor }}
+            </li>
+          </ul>
         </div>
       </div>
     </div>

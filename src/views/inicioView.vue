@@ -1,13 +1,21 @@
 <script setup>
 import { useRouter } from 'vue-router'
-import logomym from '@/assets/imagenes/Logo M y M.png'
 const router = useRouter()
 </script>
 
 <template>
   <header class="site-header">
     <div class="header-content">
-      <img :src="logomym" alt="Logo MyM Light" class="logo" />
+
+      <picture>
+        <source srcset="/imagenes/LogoMyM.webp" type="image/webp" />
+        <img
+          src="/imagenes/LogoMyM.png"
+          alt="Logo de MyM Light"
+          class="logo"
+          decoding="async"
+        />
+      </picture>
 
       <div class="header-text">
         <h1>Empresa líder en iluminación</h1>
@@ -18,12 +26,13 @@ const router = useRouter()
           Especialistas en tecnología LED, proyectores arquitectónicos, control inteligente y diseño lumínico.
           Nuestro equipo ofrece asesoramiento técnico, instalación y mantenimiento.
         </p>
-        <button @click="router.push('/contacto')" class="cta-button">Contáctanos</button>
+        <button @click="router.push('/contacto')" class="cta-button">
+          Contáctanos
+        </button>
       </div>
     </div>
   </header>
 </template>
-
 <style scoped>
 .site-header {
   display: flex;
@@ -44,14 +53,15 @@ const router = useRouter()
 }
 
 .logo {
-  width: 300px; /* Tamaño más adecuado para móvil */
-  height: 300px;
+  width: 400px; /* Tamaño más adecuado para móvil */
+  height: 400px;
   opacity: 1;
   margin-bottom: 2rem;
   mask-image: radial-gradient(circle, black 70%, transparent 30%);
   -webkit-mask-image: radial-gradient(circle, black 70%, transparent 30%);
   opacity: 0.55;
 }
+
 .header-text h1 {
   font-size: 2.5rem; /* Un poco más pequeño para móviles */
   font-weight: 700;
@@ -62,7 +72,7 @@ const router = useRouter()
 
 .tagline {
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 1.5rem;
   color: #f1f1f1;
 }
@@ -93,6 +103,7 @@ const router = useRouter()
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(253, 216, 53, 0.6);
 }
+
 @media (min-width: 768px) {
   .header-content {
     flex-direction: row; /* Layout lado a lado */
@@ -109,8 +120,8 @@ const router = useRouter()
   }
 
   .logo {
-    width: 320px; /* Tamaño más grande para PC */
-    height: 320px;
+    width: 400px;
+    height: 400px;
     margin-bottom: 0; /* Quitamos el margen inferior */
   }
 }
