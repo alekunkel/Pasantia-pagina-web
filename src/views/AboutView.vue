@@ -1,8 +1,14 @@
 <script setup>
 import myVideo from '@/assets/videos/Mym_light_video.mp4'
-
-defineOptions({
-  name: 'AboutView'
+import { useHead } from '@vueuse/head'
+useHead({
+  title: 'Acerca de MyM light',
+  meta: [
+    {
+      name: 'description',
+      content: ' acerca de la empresa MyM Light, profesionales en iluminación profesional',
+    },
+  ],
 })
 </script>
 

@@ -1,6 +1,16 @@
 <script setup>
 import { useRouter } from 'vue-router'
 const router = useRouter()
+import { useHead } from '@vueuse/head'
+useHead({
+  title: 'MyM light: una empresa de iluminación profesional',
+  meta: [
+    {
+      name: 'description',
+      content: 'Somos MyM Light, una empresa con mas de 20 años de experiencia en  iluminación profesional',
+    },
+  ],
+})
 </script>
 
 <template>

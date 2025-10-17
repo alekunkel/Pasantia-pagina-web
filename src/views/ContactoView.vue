@@ -1,4 +1,15 @@
 <script setup>
+import { useHead } from '@vueuse/head'
+useHead({
+  title: 'Contactanos ',
+  meta: [
+    {
+      name: 'description',
+      content: 'Contacto y redes sociales de la empresa MyM light',
+    },
+  ],
+})
+
 </script>
 
 <template>

@@ -1,8 +1,16 @@
 <script setup>
 import { ref } from 'vue'
+import { useHead } from '@vueuse/head'
+useHead({
+  title: 'Productos de MyM light',
+  meta: [
+    {
+      name: 'description',
+      content: 'Demostración de los productos ofrecidos por la empresa MyM light',
+    },
+  ],
+})
 
-// Ya no necesitamos la función 'getImageUrl' ni los 'import' de imágenes.
-// La estructura de datos ahora está limpia y es consistente para todos los productos.
 const productos = ref([
   {
     id: 1,
