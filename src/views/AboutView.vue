@@ -2,11 +2,11 @@
 import myVideo from '@/assets/videos/Mym_light_video.mp4'
 import { useHead } from '@vueuse/head'
 useHead({
-  title: 'Acerca de MyM light',
+  title: 'Acerca de MyM Light | Expertos en Iluminación',
   meta: [
     {
       name: 'description',
-      content: ' acerca de la empresa MyM Light, profesionales en iluminación profesional',
+      content: 'Conoce la historia de MyM Light. Somos tu socio experto en soluciones de iluminación profesional para todo tipo de eventos e instalaciones.',
     },
   ],
 })
@@ -40,7 +40,6 @@ useHead({
   overflow: hidden;
 }
 
-/* Contenedor del contenido */
 .about {
   padding: 2rem;
   text-align: center;
@@ -53,33 +52,6 @@ useHead({
   margin: 2rem auto;
 }
 
-.about a {
-  display: inline-block;
-  margin-bottom: 1.5rem;
-  font-weight: bold;
-  color: #00c3ff;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.about a:hover {
-  color: #00a0cc;
-  text-decoration: underline;
-}
-
-.about h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
-}
-
-.about p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6;
-  text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
-}
 
 @media (min-width: 1024px) {
   .about {

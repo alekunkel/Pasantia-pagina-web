@@ -2,11 +2,11 @@
 import { ref } from 'vue'
 import { useHead } from '@vueuse/head'
 useHead({
-  title: 'Productos de MyM light',
+  title: 'Catálogo de Productos | MyM Light Iluminación profesional ',
   meta: [
     {
       name: 'description',
-      content: 'Demostración de los productos ofrecidos por la empresa MyM light',
+      content: 'Descubre nuestro catálogo: Tubos LED, Barras Hexaled, Pistas LED, Aros Pixel y más. Soluciones para fiestas y eventos.',
     },
   ],
 })
@@ -252,13 +252,6 @@ html, body {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* nuevo */
 }
 
-.producto-info p {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: white;
-  font-weight: 600;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* nuevo */
-}
 </style>
 
 

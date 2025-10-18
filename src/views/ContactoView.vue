@@ -1,11 +1,11 @@
 <script setup>
 import { useHead } from '@vueuse/head'
 useHead({
-  title: 'Contactanos ',
+  title: 'Contacto | MyM Light',
   meta: [
     {
       name: 'description',
-      content: 'Contacto y redes sociales de la empresa MyM light',
+      content: 'Contacta a MyM Light. Escríbenos por WhatsApp o síguenos en Instagram, Facebook y YouTube para asesorarte en tu próximo proyecto de iluminación.',
     },
   ],
 })

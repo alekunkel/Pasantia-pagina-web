@@ -4,11 +4,11 @@ import video2 from '@/assets/videos/video2.mp4';
 import video3 from '@/assets/videos/video3.mp4';
 import { useHead } from '@vueuse/head'
 useHead({
-  title: 'proyectos de MyM light',
+  title: 'Proyectos destacados de  MyM light',
   meta: [
     {
       name: 'description',
-      content: 'Demostración de proyectos de la empresa MyM light',
+      content: 'Explora los proyectos de MyM Light. Mira nuestras instalaciones LED innovadoras, como un trabajo en Morocco en Brinkmann.',
     },
   ],
 })

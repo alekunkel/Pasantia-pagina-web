@@ -3,11 +3,11 @@ import { useRouter } from 'vue-router'
 const router = useRouter()
 import { useHead } from '@vueuse/head'
 useHead({
-  title: 'MyM light: una empresa de iluminación profesional',
+  title: 'MyM Light | Empresa Líder en Iluminación Profesional',
   meta: [
     {
       name: 'description',
-      content: 'Somos MyM Light, una empresa con mas de 20 años de experiencia en  iluminación profesional',
+      content: 'MyM Light: Más de 20 años de experiencia en iluminación profesional. Especialistas en tecnología LED, proyectos arquitectónicos y diseño lumínico.',
     },
   ],
 })
