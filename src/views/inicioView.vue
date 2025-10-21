@@ -63,7 +63,7 @@ useHead({
 }
 
 .logo {
-  width: 400px; /* Tamaño más adecuado para móvil */
+  width: 400px;
   height: 400px;
   opacity: 1;
   margin-bottom: 2rem;
