@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import { useHead } from '@vueuse/head'
+
 useHead({
   title: 'Catálogo de Productos | MyM Light Iluminación profesional ',
   meta: [
@@ -16,7 +17,7 @@ const productos = ref([
     id: 1,
     nombre: 'Tubos LED',
     descripcion: 'Indoor RGB – Full color',
-    imagen: 'tubosled.jpg', // Solo el nombre del archivo
+    imagen: 'tubosled.jpg',
     especificaciones: [
       { etiqueta: 'Diámetro', valor: '60 mm' },
       { etiqueta: 'Largo', valor: '1000 mm' },
@@ -122,7 +123,26 @@ const productos = ref([
       { etiqueta: 'Píxeles', valor: '84 RGB WS2811' },
       { etiqueta: 'Led Central', valor: 'Tira de led cálido' },
       { etiqueta: 'Consumo', valor: 'Máx. 70w / Prom. 35w' },
-      { etiqueta: 'Tensión', valor: '12 Volts' },
+      { etiqueta: 'Tensión', valor: '12 Volts' }
+    ]
+  },
+  {
+    id: 9,
+    nombre: 'Pista Led Graficadóra',
+    descripcion: '',
+    imagen: 'exaled.jpg',
+    especificaciones: [
+      { etiqueta: 'Altura', valor: '900 mm' },
+      { etiqueta: 'Espesor', valor: '55 mm' },
+
+      { etiqueta: 'Peso', valor: '12 kg' },
+      { etiqueta: 'Resolución visual', valor: '90 mm, 100 unidades / RGB 3 en 1 R—G—B' },
+      { etiqueta: 'Consumo', valor: 'Máx. 30w / Prom. 15w' },
+      { etiqueta: 'Tensión', valor: '5 V' },
+      { etiqueta: 'Admite salpicaduras', valor: 'No sumergible' },
+      { etiqueta: 'Material', valor: 'Melamina negra 18mm + círculos traslúcidos con pintura protectora' },
+{ etiqueta: 'Software', valor: 'LED Edit 2014 — Jinx — Madrix — Resolume' },
+
     ]
   }
 ])
@@ -176,7 +196,7 @@ html, body {
   padding: 2rem 1rem;
 
   font-family: 'Montserrat', sans-serif;
-
+color: white;
   background: linear-gradient(270deg, red, orange, yellow, green, cyan, blue, violet, red);
   background-size: 200% 200%;
   animation: rainbowShift 20s linear infinite;
@@ -252,6 +272,11 @@ html, body {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* nuevo */
 }
 
+.producto-info p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* nuevo */
+}
 </style>
-
-
