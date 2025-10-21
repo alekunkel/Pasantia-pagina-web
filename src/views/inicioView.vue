@@ -135,4 +135,5 @@ useHead({
     margin-bottom: 0; /* Quitamos el margen inferior */
   }
 }
+
 </style>
