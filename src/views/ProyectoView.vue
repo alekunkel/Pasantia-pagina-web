@@ -1,7 +1,4 @@
 <script setup>
-import video1 from '@/assets/videos/video1.mp4';
-import video2 from '@/assets/videos/video2.mp4';
-import video3 from '@/assets/videos/video3.mp4';
 import { useHead } from '@vueuse/head'
 useHead({
   title: 'Proyectos destacados de  MyM light',
@@ -18,20 +15,20 @@ const proyectos = [
     id: 1,
     titulo: 'Diseños Innovadores',
     descripcion: 'Instalación de luminarias LED adaptado a cada necesidad.',
-    video: video1,
+    video: '/videos/video1.mp4',
         altText: 'Video en bucle de un cubo de luces led hecho por pedido de un cliente.'
   },
   {
     id: 2,
     titulo: 'Proyecto Morocco Brinkmann',
-    video: video2,
+    video: 'video2.mp4',
     descripcion: 'Sistema de iluminación eficiente para todo tipo de fiestas.',
     altText: 'Video en bucle de una instalacion iluminaria en un boliche reconocido llamado Morocco'
   },
   {
     id: 3,
     titulo: 'Iluminacion Internacional',
-    video: video3,
+    video: 'video3.mp4',
     descripcion: 'Iluminación para eventos dentro y fuera del país.',
     altText: 'Video en bucle donde explica como la empresa trabaja dentro y fuera del pais.'
   },
