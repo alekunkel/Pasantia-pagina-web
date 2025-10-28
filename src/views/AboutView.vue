@@ -17,7 +17,7 @@ useHead({
       Un video de fondo animado que muestra formas abstractas moviéndose.
     </span>
     <video autoplay muted loop playsinline>
-      <source src="/videos/Mym_light_video.mp4"  :type="video/mp4" />
+      <source src="/videos/Mym_light_video.mp4" type="video/mp4" />
     </video>
   </div>
   <div class="about contenido">

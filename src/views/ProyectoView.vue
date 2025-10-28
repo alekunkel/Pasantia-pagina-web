@@ -21,14 +21,14 @@ const proyectos = [
   {
     id: 2,
     titulo: 'Proyecto Morocco Brinkmann',
-    video: 'video2.mp4',
+    video: '/videos/video2.mp4',
     descripcion: 'Sistema de iluminación eficiente para todo tipo de fiestas.',
     altText: 'Video en bucle de una instalacion iluminaria en un boliche reconocido llamado Morocco'
   },
   {
     id: 3,
     titulo: 'Iluminacion Internacional',
-    video: 'video3.mp4',
+    video: '/videos/video3.mp4',
     descripcion: 'Iluminación para eventos dentro y fuera del país.',
     altText: 'Video en bucle donde explica como la empresa trabaja dentro y fuera del pais.'
   },
@@ -86,11 +86,10 @@ const proyectos = [
   transform: scale(1.05);
 }
 
-/* ⭐ CLAVE: El selector incluye solo 'video' (o 'img, video' si usaras ambos) ⭐ */
 .proyecto video {
-  width: 100%;
+  width: 150%;
   border-radius: 10px;
-  height: 400px;
+  height: 625px;
   /* 'object-fit: cover' es importante para que el video llene el contenedor sin distorsionarse */
   object-fit: cover;
 }

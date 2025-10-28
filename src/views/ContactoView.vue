@@ -46,19 +46,6 @@ useHead({
         </svg>
       </a>
       <a
-        href="https://www.facebook.com/M&M_Light"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Facebook"
-        class="social-link facebook"
-      >
-        <svg viewBox="0 0 24 24" class="icono">
-          <path
-            d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 23.407.593 24 1.325 24h11.495V14.709h-3.13v-3.622h3.13V8.408c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.466.099 2.797.143v3.24l-1.919.001c-1.504 0-1.796.715-1.796 1.764v2.31h3.587l-.467 3.622h-3.12V24h6.116C23.407 24 24 23.407 24 22.674V1.326C24 .593 23.407 0 22.675 0z"
-          />
-        </svg>
-      </a>
-      <a
         href="https://www.youtube.com/@mym_light/"
         target="_blank"
         rel="noopener noreferrer"

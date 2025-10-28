@@ -42,7 +42,9 @@ useHead({
       </div>
     </div>
   </header>
+
 </template>
+
 <style scoped>
 .site-header {
   display: flex;

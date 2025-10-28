@@ -45,20 +45,6 @@ const productos = ref([
   },
   {
     id: 3,
-    nombre: 'Pista Led',
-    descripcion: 'Indoor RGB – Full color',
-    imagen: 'pistaled.jpg',
-    especificaciones: [
-      { etiqueta: 'Dimensiones', valor: '900x900 mm' },
-      { etiqueta: 'Espesor', valor: '55 mm' },
-      { etiqueta: 'Peso', valor: '12 kg' },
-      { etiqueta: 'Píxeles', valor: '100 unidades' },
-      { etiqueta: 'Consumo', valor: 'Máx. 30w / Prom. 15w' },
-      { etiqueta: 'Tensión', valor: '5 Volts' },
-    ]
-  },
-  {
-    id: 4,
     nombre: 'Aros Pixel Led',
     descripcion: 'Foco estroboscópico ajustable',
     imagen: 'arospixel_led.jpg',
@@ -72,7 +58,7 @@ const productos = ref([
     ]
   },
   {
-    id: 5,
+    id: 4,
     nombre: 'Cuadrados Pixel Led',
     descripcion: 'Indoor RGB – Full color',
     imagen: 'cuadradospixel_led.jpg',
@@ -86,7 +72,7 @@ const productos = ref([
     ]
   },
   {
-    id: 6,
+    id: 5,
     nombre: 'Triángulos Pixel Led',
     descripcion: 'Indoor RGB – Full color',
     imagen: 'triangulospixel_led.jpg',
@@ -100,7 +86,7 @@ const productos = ref([
     ]
   },
   {
-    id: 7,
+    id: 6,
     nombre: 'Pista de Acero',
     descripcion: 'Pista de baile sin iluminación',
     imagen: 'pistadeacero.jpg',
@@ -112,7 +98,7 @@ const productos = ref([
     ]
   },
   {
-    id: 8,
+    id: 7,
     nombre: 'Hexaled',
     descripcion: 'Indoor RGB – Full color',
     imagen: 'exaled.jpg',
@@ -127,10 +113,10 @@ const productos = ref([
     ]
   },
   {
-    id: 9,
+    id: 8,
     nombre: 'Pista Led Graficadóra',
     descripcion: '',
-    imagen: 'exaled.jpg',
+    imagen: 'pista_graficadora.jpg',
     especificaciones: [
       { etiqueta: 'Altura', valor: '900 mm' },
       { etiqueta: 'Espesor', valor: '55 mm' },
@@ -247,8 +233,8 @@ color: white;
 }
 
 .producto-img {
-  width: 100%;
-  height: 220px;
+  width: 150%;
+  height: 550px;
   object-fit: cover;
 }
 
