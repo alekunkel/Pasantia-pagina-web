@@ -2,14 +2,14 @@ import { fileURLToPath, URL } from 'node:url'
 import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import vueDevTools from 'vite-plugin-vue-devtools'
+//import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
   base: '/', // si tu app está en la raíz del dominio de Vercel
   plugins: [
     vue(),
-    vueDevTools(),
+    //vueDevTools(),
     cssInjectedByJsPlugin(),
   ],
   resolve: {
